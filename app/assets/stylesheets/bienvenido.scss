@@ -1,0 +1,287 @@
+// Place all the styles related to the Bienvenido controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* General */
+@import "semantic-ui";
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+   
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img{
+   width: auto;
+   height: inherit;
+}
+
+/* Main */
+.main {
+  color: #fff;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+#menu-superior {
+ /* background: #c7eff2;  /*Color de la barra, nosotros la tenemos de color azul, pero puedes poner el color que quieras*/
+  width:100%; 
+  height:20px; /*Alto de la barra*/
+ 
+ position:fixed; /*Para que la barra se quede fija*/
+  
+  letter-spacing:2px; /*Espacio entre las letras, para que se vean más separadas*/
+}
+
+#menu{
+  margin:0 auto;
+  width:1020px;
+  height:30px;
+}
+
+.b{  /*hijos*/
+	position: absolute;
+	left: 800px;
+	top: 40px;
+}
+.b h4{  /*hijos*/
+	font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+.comentarios{
+    margin-top: 100px;
+}
+#menu ul{
+  float:center; /*Donde queremos que quede alineado el menú*/
+  background:none;
+  margin:0px;
+  padding:0;
+  list-style-type:none;
+  height:25px;
+}
+#letras{
+    color: aliceblue;
+}
+
+#menu ul li{
+  display:block; 
+  float:left; 
+  height:30px;
+}
+#menu ul li a{ 
+  display:block;  
+  float:center;  
+  color:#ffffff; /* Color del texto */
+  font: 14px "Arial"; /* Tamaño y tipografia del texto*/
+  text-decoration:none;
+  padding:10px 10px 0 10px;
+}
+#menu ul li a:hover{  
+ /* background: #A0A0A0; /* Color del fondo al pasar el ratón por encima de cada pestaña, nosotros lo hemos puesto del mismo color para que no cambie*/
+  color:#A0Afff; /* Color del texto al pasar el ratón por encima*/
+  
+}
+.btn{
+   margin-top: 160px;
+}
+#btn2{
+    margin-top: 30px;
+}
+.rs{
+    text-align: right;
+    margin-top: -94px;
+}
+#menu ul{
+   list-style-type: none;
+   //text-align: center;
+}
+#menu li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#menu li a {
+   padding: inherit;
+   color: #fff;
+   text-decoration: none;
+}
+#menu li a:hover{
+   color: #ffffff;
+}
+body{overflow-y: auto;
+	 overflow-x: hidden;}
+.datos{
+    color: black;
+  /* text-align: left;*/
+    left: auto;
+    float: right;
+    margin-top: -300px;
+    margin-right: -330px;
+}
+footer {
+            position: relative;
+            /* Altura total del footer en px con valor negativo */
+            margin-top: 54px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 40px;
+            font: 13px "Arial"; 
+            padding:5px 0px;
+            clear: both;
+            
+            text-align: center;
+            color: darkgray;
+        }
+ 
+        /* Esta clase define la anchura del contenido y la posicion centrada 
+           El contenido queda centrado y limitado, pero la cabecera y el pie
+           llegan hasta los limites del navegador.
+        */
+        .define {
+
+ 
+ 
+
+            width:960px;
+            margin:0 auto;
+            display: inline;
+            text-align: center;
+        }
+.define ul{
+    color: darkgray;
+  float:center; /*Donde queréis que quede alineado el menú, left (a la izquierda)*/
+  background:none;
+  margin:0px;
+  padding:0;
+  list-style-type:none;
+  height:25px;
+}
+.info h1, h2, h3, h4{
+    text-align: right;
+}
+.define ul li {
+  display:inline; 
+  float:center; 
+  height:30px;
+    padding: 5px;
+    color: darkgray;
+}
+.define ul li a { 
+  color: darkgray;
+  float:center;  
+}
+
+@media screen and (max-width: 800px) {
+    
+    img{float: inherit;
+        margin-top: 1px;
+        align-content: left;
+        align-self: auto;
+    }
+    #menu{
+  margin:0 auto;
+  width:600px;
+  height:70px;
+}
+    body {
+        background-image: url(2014_mazda_3-1366x768.jpg);
+      
+       
+        background-size: auto 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    #menu-superior { display: flex; 
+         position: relative;/* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */}
+    #menu ul{
+        margin-top: 120px;
+  float:left; /*Donde queremos que quede alineado el menú*/
+  background:none;
+  margin:0px;
+  padding:0;
+  list-style-type:none;
+  height:25px;
+    
+        display: table-column;
+  
+}
+    #menu li{
+        margin-top: 120px;
+   display: table-column;
+   text-align: left;
+   margin: 0 10px 0 0;
+   
+}
+#menu li a {
+   color: #fff;
+   text-decoration: none;
+    display: table-column;
+   
+}
+    #cambio {
+        margin-top: 110px;
+    }
+}
+@media screen and (max-width: 680px){ /* pantalla */
+    #letras{
+        margin-top: 130px;
+    }
+    #rs{
+        margin-top: 100px;
+    }
+    #menu{
+  margin:0 auto;
+  width:100px;
+  height:30px;
+}
+  #menu-superior { display: flex; 
+      width: auto;
+      height: 23px;
+      position: relative;/* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */}
+    #menu ul{
+  float:left; /*Donde queremos que quede alineado el menú*/
+  background:none;
+  margin:0px;
+  padding:0;
+  list-style-type:none;
+  height:25px;
+    
+        display: table-column;
+  
+}
+    #menu li{
+display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+   text-align: left;
+   margin: 0 10px 0 0;
+      
+   
+}
+#menu li a {
+   
+   color: #fff;
+   display: table-column;/* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+   
+}
+    #cambio {
+        margin-top: 110px;
+    }
+}

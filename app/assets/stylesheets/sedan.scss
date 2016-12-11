@@ -1,0 +1,31 @@
+@import "semantic-ui";
+#menu-sup, #men{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+#imgn{
+    margin-top: 70px;
+    text-align: center;
+}
+#cartas{
+    margin-top: 20px;
+}
+.im{
+    width: 120px;
+    height: 120px;
+}
+@media screen and (max-width: 680px){ /* pantalla */
+    #menu-sup, #menu{
+        
+        background-color: black;
+        height: 220px;
+        
+    }
+    img{
+        width: 350px;
+        height: 200px;
+    }
+
+}

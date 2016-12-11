@@ -1,0 +1,23 @@
+@import "semantic-ui";
+html, body{
+   background-image: none;
+}
+
+#menu-sup, #men{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+#map{
+    margin-left: 100px;
+}
+#letra{
+    color:black;
+}
+#lista{
+    margin-top: 45px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}

@@ -1,0 +1,11 @@
+<%= start_form_tag :action=> "send_mail" %>
+<label for="email_name">Name:</label>
+<%= text_field "email", "name", :size => 30 %>
+<label for="email_address">Email Address:</label>
+<%= text_field "email", "address", :size => 30 %>
+<label for="email_subject">Subject:</label>
+<%= text_field "email", "subject", :size => 30 %>
+<label for="email_body">Body:</label>
+<%= text_area "email", "body", :rows => 8, :cols => 30 %>
+<input value="Send Email" class="primary" type="submit" /> 
+<%= end_form_tag %>

@@ -1,0 +1,36 @@
+@import "semantic-ui";
+html, body{
+   background-image: none;
+}
+
+#menu-sup, #men{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+#map{
+    margin-left: 100px;
+}
+#letra{
+    color:black;
+}
+@media screen and (max-width: 680px){ /* pantalla */
+    #map{
+        margin-left: 0px;
+      
+    }
+    #datos{
+        text-align: left;
+        margin-top: 200px;
+    }
+    #inf{
+        text-align: left;
+    }
+    img{
+        width: 350px;
+        height: 200px;
+    }
+
+}

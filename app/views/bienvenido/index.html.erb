@@ -1,0 +1,104 @@
+<style>
+   body{ background-image: url(2014_mazda_3-1366x768.jpg);}
+</style>
+<div id="menu">
+    
+    
+     <!--Empieza el menú superior --> 
+<div id="menu-superior">
+<div id="menu">
+<ul>
+    <li><a  <%= link_to "", root_path %>><img class="ui top aligned tiny image" align="left" src="<%= asset_path 'mazda_logo.png' %>" width="100px" height="100px"></a></li>
+
+
+<li><a title="Sedán"
+       <%= link_to "Sedan", :controller => "bienvenido", :action => "sedan"%>></a></li>
+<li><a title="Todoterrenos"  
+       <%= link_to "Todoterrenos", :controller => "bienvenido", :action => "todoterrenos" %>></a></li> 
+<li><a title="Deportivos" 
+       <%= link_to "Deportivos", :controller => "bienvenido", :action => "deportivos"%>></a></li></a></li>
+<li><a title="Futuros" 
+       <%= link_to "Futuros", :controller => "bienvenido", :action => "futuros"%>></a></li>></a></li>
+<li><a title="Visítanos" 
+       <%= link_to "Visítanos", :controller => "bienvenido", :action => "visitanos"%>></a></li>></a></li>
+<li><a title="Visítanos" 
+       <%= link_to "Cita", :controller => "cita", :action => "new"%>></a></li></a></li>
+</ul></div></div>  
+<!-- Acaba el menú superior -->
+ <!-- Este es un comentario en HTML
+    <div class="btnscentro">
+    <ul>
+        <li><a href="#" title="Decubre el Mazda3">Mazda3</a></li>
+        <li><a href="#" title="Descubre el Mazda6">Mazda6</a></li>
+    </ul>
+        </div>
+   */--> 
+    </div>
+
+<div class="main">
+    <div id="letras" class="container">   
+    <h1>DISEÑADO POR UNA RAZÓN:</h1>
+    <h1>EL MANEJO PERFECTO</h1>
+    <p>Driving matters</p>
+  </div>
+</div>
+
+<div id="cambio">
+<div class="ui circular segment">
+  <h2 class="ui header" ><a onClick="window.location.href='cita/new'">Prueba de manejo</a><div class="sub header">>Programar</div>
+  </h2>
+</div>
+
+<div class=rs>
+<div class="ui compact message">
+  <p>Encuéntranos!</p>
+    <button type="submit" 
+            onclick="location.href='https://www.facebook.com/mazdamexico/';"
+            class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</button>
+<button 
+        type="submit" 
+       onclick="location.href='https://twitter.com/mazdaoficial?lang=es';"
+        class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</button>
+<button type="submit" 
+        onclick="location.href='https://plus.google.com/+MazdaUSA';"
+        class="ui circular google plus icon button">
+  <i class="google plus icon"></i>
+</button>
+</div>
+</div>
+</div>
+<center>
+    <div class=btn>
+<div class="blue ui buttons">
+  <button type="submit" 
+          class="ui button" 
+          onClick="window.location.href='bienvenido/sedan'">Descubre el Mazda 3</button>
+  <div class="o"></div>
+  <button type="submit" class="ui button" onClick="window.location.href='bienvenido/todoterrenos'">Descubre el Mazda CX-3</button>
+</div>
+    </div>
+    <div type="submit" id=btn2 class="ui animated button" tabindex="0"><a <%= link_to "Ver galería", :controller => "bienvenido", :action => "galeria"%>>
+  <div class="visible content"></div>
+  <div class="hidden content">
+    <i class="right arrow icon"></i>
+  </div></a>
+</div>
+        
+</center>
+ <footer>
+        <div class='define'>
+           <ul>
+<div class="ui horizontal bulleted list">
+    <a class="item">Mazda Motor Corporation © 2016 </a>
+  <a class="item" <%= link_to "Acerca", :controller => "bienvenido", :action => "acerca"%>></a>
+  <a class="item" <%= link_to "Mapa del sitio", :controller => "bienvenido", :action => "mapa"%>></a>
+  <a class="item"<%= link_to "Aviso de privacidad", :controller => "bienvenido", :action => "aviso"%>></a>
+</div>
+</ul>
+        </div>
+    </footer>
+</body>

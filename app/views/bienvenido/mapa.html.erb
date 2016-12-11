@@ -1,0 +1,77 @@
+<style>
+   body{ background:#F1F1F1;}
+</style>
+<div id="menu">
+     <!--Empieza el menú superior --> 
+<div class="titulo" id="menu-su">
+<div id="men">
+<ul>
+    <li><a  <%= link_to "", root_path %>><img class="ui top aligned tiny image" align="left" src="<%= asset_path 'mazda_logo.png' %>" width="100px" height="100px"></a></li>
+<li><a title="Sedán" <%= link_to "Sedán", :controller => "bienvenido", :action => "sedan"%>></a></li>
+<li><a title="Todoterrenos" <%= link_to "Todoterrenos", :controller => "bienvenido", :action => "todoterrenos"%>></a></li> 
+<li><a title="Deportivos" <%= link_to "Deportivos", :controller => "bienvenido", :action => "deportivos"%>></a></li>
+<li><a title="Futuros" <%= link_to "Futuros", :controller => "bienvenido", :action => "futuros"%>></a></li>
+<li><a title="Visítanos" <%= link_to "Visítanos", :controller => "bienvenido", :action => "visitanos"%>></a></li>
+<li><a title="Visítanos" <%= link_to "Cita", :controller => "cita", :action => "new"%>></a></li>
+</ul></div></div>  
+<!-- Acaba el menú superior -->
+ <!-- Este es un comentario en HTML
+    <div class="btnscentro">
+    <ul>
+        <li><a href="#" title="Decubre el Mazda3">Mazda3</a></li>
+        <li><a href="#" title="Descubre el Mazda6">Mazda6</a></li>
+    </ul>
+        </div>
+   */--> 
+    </div>
+<div id="lista" class="ui ordered list">
+  <a class="item" <%= link_to "Home", root_path %>></a>
+  <div class="item">
+    <a <%= link_to "Sedán", :controller => "bienvenido", :action => "sedan"%>></a>
+    <div class="list">
+      <a class="item" >Mazda 3 Sedán 2017</a>
+      <a class="item">Mazda 3 Hatchback 2017</a>
+      <a class="item">Mazda 6 2017</a>
+    </div>
+  </div>
+    <div class="item">
+    <a <%= link_to "Todoterrenos", :controller => "bienvenido", :action => "todoterrenos"%>></a>
+    <div class="list">
+      <a class="item">Mazda CX-3 2017</a>
+      <a class="item">Mazda CX-5 2017</a>
+      <a class="item">Mazda CX-9 2017</a>
+    </div>
+  </div>
+    <div class="item">
+    <a <%= link_to "Deportivos", :controller => "bienvenido", :action => "deportivos"%>></a>
+    <div class="list">
+      <a class="item">Mazda MX-5 MIATA 2017</a>
+      <a class="item">Mazda CX-5 2017</a>
+      <a class="item">Mazda CX-9 2017</a>
+    </div>
+  </div>
+    <div class="item">
+    <a <%= link_to "Futuros", :controller => "bienvenido", :action => "futuros"%>></a>
+    <div class="list">
+      <a class="item">Mazda MX-5 RF 2017</a>
+    </div>
+  </div>
+  <a class="item" <%= link_to "Visítanos", :controller => "bienvenido", :action => "visitanos"%>></a>
+    <a class="item" <%= link_to "Agenda una cita", :controller => "cita", :action => "new"%>></a>
+    <a class="item" <%= link_to "Acerca de la empresa", :controller => "bienvenido", :action => "acerca"%>></a>
+    <a class="item" <%= link_to "Aviso de privacidad", :controller => "bienvenido", :action => "aviso"%>></a>
+</div>
+
+
+<footer>
+        <div class='define'>
+           <ul>
+<div class="ui horizontal bulleted list">
+    <a class="item">Mazda Motor Corporation © 2016 </a>
+  <a class="item" <%= link_to "Acerca", :controller => "bienvenido", :action => "acerca"%>> </a>
+  <a class="item"<%= link_to "Mapa del sitio", :controller => "bienvenido", :action => "mapa"%>></a>
+  <a class="item"<%= link_to "Aviso de privacidad", :controller => "bienvenido", :action => "aviso"%>></a>
+</div>
+</ul>
+        </div>
+    </footer>

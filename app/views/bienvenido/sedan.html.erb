@@ -1,0 +1,365 @@
+<style>
+   body{ background:#F4F4F4;}
+</style>
+<div id="menu">
+     <!--Empieza el menú superior --> 
+<div class="titulo" id="menu-su">
+<div id="men">
+<ul>
+    <li><a  <%= link_to "", root_path %>><img class="ui top aligned tiny image" align="left" src="<%= asset_path 'mazda_logo.png' %>" width="100px" height="100px"></a></li>
+<li><a title="Sedán" 
+       <%= link_to "Sedán", :controller => "bienvenido", :action => "sedan"%>></a></li>
+<li><a title="Todoterrenos" 
+       <%= link_to "Todoterrenos", :controller => "bienvenido", :action => "todoterrenos"%>></a></li> 
+<li><a title="Deportivos" 
+       <%= link_to "Deportivos", :controller => "bienvenido", :action => "deportivos"%>></a></li>
+<li><a title="Futuros" <%= link_to "Futuros", :controller => "bienvenido", :action => "futuros"%>></a></li>
+<li><a title="Visítanos" <%= link_to "Visítanos", :controller => "bienvenido", :action => "visitanos"%>></a></li>
+<li><a title="Registro" <%= link_to "Cita", :controller => "cita", :action => "new"%>></a></li>
+</ul></div></div>  
+<!-- Acaba el menú superior -->
+ <!-- Este es un comentario en HTML
+    <div class="btnscentro">
+    <ul>
+        <li><a href="#" title="Decubre el Mazda3">Mazda3</a></li>
+        <li><a href="#" title="Descubre el Mazda6">Mazda6</a></li>
+    </ul>
+        </div>
+   */--> 
+    </div>
+
+<div id="imgn" class="ui piled segments">
+  <div class="ui segment">
+    <h1>Mazda 3 Sedán 2017</h1>
+      <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/gallery/360-environmental/my17_m3s_env_360_0023.jpg?w=1170">
+      <div id="cartas" class="ui three column grid">
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/sport/17-m3s-sp-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i</a>
+          <a class="date">Desde: $275,900</a>
+          <p class="description">18.5 KM/L</p>
+          <p class="description">155 HP</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/touring/17-m3s-t-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i Touring</a>
+           <a class="date">Desde: $298,900</a>
+          <p class="description">16.9 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/touring/17-m3s-t-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo S</a>
+           <a class="date">Desde: $318,900</a>
+          <p class="description">16.7 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      
+      
+      <div class="ui list">
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Motor y transmisión</a>
+      <div class="description">Tipo de motor 2.0L SKYACTIV-G 16 válvulas</div>
+        <div class="description">Potencia 155hp | 6,000rpm</div>
+        <div class="description">Torque 148lb-ft | 4,000rpm</div>
+        <div class="description">Línea roja 6,800rpm</div>
+        <div class="description">Desplazamiento 1,998cm3</div>
+        <div class="description">Diámetro x carrera 83.5 x 91.2mm</div>
+        <div class="description">Relación de compresión 13.0:1</div>
+        <div class="description">Tren de 4 válvulas por cilindro, elevadores mecánicos</div>
+        <div class="description">Inyección directa de combustible</div>
+        <div class="description">Tracción delantera</div>
+        <div class="description">Transmisión manual SKYACTIV®-MT 6 velocidades</div>
+    </div>
+  </div>
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Suspensión y chasis</a>
+      <div class="description">Control dinámico de estabilidad (DSC)</div>
+        <div class="description">Dirección eléctrica</div>
+        <div class="description">Frenos con Sistema Anti-bloqueo (ABS)</div>
+        <div class="description">Asistencia de Frenado (BA)</div>
+        <div class="description">Distribución Electrónica de Fuerza de Frenado (EBD)</div>
+        <div class="description">Frenos de potencia de disco ventilado delantero y disco sólido trasero</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Exterior</a>
+      <div class="description">Faros de halógeno</div>
+        <div class="description">Luces de marcha diurna (DRL)</div>
+        <div class="description">Vidrios entintados con filtro UV</div>
+        <div class="description">Llantas P205/60 R16</div>
+        <div class="description">Rines 16" acero</div>
+        <div class="description">Antena integrada al medallón</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Interior</a>
+      <div class="description">Aire acondicionado con filtro anti-polen</div>
+        <div class="description">Apertura interior de tapa de combustible, cofre y cajuela</div>
+        <div class="description">Botón de encendido automático</div>
+        <div class="description">Desempañador trasero</div>
+        <div class="description">Espejo retrovisor con cambio manual para día y noche</div>
+        <div class="description">Luces de lectura delanteras</div>
+        <div class="description">Tomacorriente de 12V (1)</div>
+        <div class="description">Volante con ajuste de altura y profundidad</div>
+        <div class="description">Computadora de viaje</div>
+        <div class="description">Tacómetro y 2 odómetros de viaje reiniciables</div>
+    </div>
+  </div>
+</div>
+      
+      
+      
+      
+  </div>
+  <div class="ui segment">
+    <h1>Mazda 3 Hatchback 2017</h1>
+      <img id="im" src="http://www.mazda.mx/siteassets/vehicles/2017/mazda3-5-door---m3h/trims/touring-2.5/17-m3h-t25-41v-soul-red.png">
+      <div id="cartas" class="ui three column grid">
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/sport/17-m3s-sp-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i Touring</a>
+          <a class="date">Desde: $298,900</a>
+          <p class="description">16.7 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/touring/17-m3s-t-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo s</a>
+           <a class="date">Desde: $318,900</a>
+          <p class="description">16.5 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/touring/17-m3s-t-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo S Grand Touring</a>
+           <a class="date">Desde: $349,900</a>
+          <p class="description">16.5 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      
+      
+      <div class="ui list">
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Motor y transmisión</a>
+      <div class="description">Tipo de motor 2.5L SKYACTIV-G 16 válvulas</div>
+        <div class="description">Potencia 188hp | 5,700rpm</div>
+        <div class="description">Torque 184lb-ft | 3,250rpm</div>
+        <div class="description">Línea roja 6,500rpm</div>
+        <div class="description">Desplazamiento 2,488cm3</div>
+        <div class="description">Diámetro x carrera 89.0 x 100.0mm</div>
+        <div class="description">Relación de compresión 13.0:1</div>
+        <div class="description">Tren de 4 válvulas por cilindro, elevadores mecánicos</div>
+        <div class="description">Inyección directa de combustible</div>
+        <div class="description">Tracción delantera</div>
+        <div class="description">Transmisión manual SKYACTIV®-MT 6 velocidades</div>
+    </div>
+  </div>
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Suspensión y chasis</a>
+      <div class="description">Control dinámico de estabilidad (DSC)</div>
+        <div class="description">Dirección eléctrica</div>
+        <div class="description">Frenos con Sistema Anti-bloqueo (ABS)</div>
+        <div class="description">Asistencia de Frenado (BA)</div>
+        <div class="description">Distribución Electrónica de Fuerza de Frenado (EBD)</div>
+        <div class="description">Frenos de potencia de disco ventilado delantero y disco sólido trasero</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Exterior</a>
+      <div class="description">Faros de halógeno</div>
+        <div class="description">Luces de marcha diurna (DRL)</div>
+        <div class="description">Vidrios entintados con filtro UV</div>
+        <div class="description">Antena montada al techo</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Interior</a>
+      <div class="description">Aire acondicionado con filtro anti-polen</div>
+        <div class="description">Apertura interior de tapa de combustible, cofre y cajuela</div>
+        <div class="description">Botón de encendido automático</div>
+        <div class="description">Desempañador trasero</div>
+        <div class="description">Espejo retrovisor con cambio manual para día y noche</div>
+        <div class="description">Luces de lectura delanteras</div>
+        <div class="description">Tomacorriente de 12V (1)</div>
+        <div class="description">Volante con ajuste de altura y profundidad</div>
+        <div class="description">Computadora de viaje</div>
+        <div class="description">Tacómetro y 2 odómetros de viaje reiniciables</div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="ui segment">
+    <h1>Mazda 6 2017</h1>
+      <img id="im" src="http://www.mazda.mx/siteassets/vehicles/2017/mazda6/vlp/overview/studio-360s/exterior-colors/soul-red/360-mazda6-soulredmetallic-extonly-23.jpg?w=1480">
+      <div id="cartas" class="ui three column grid">
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/sport/17-m3s-sp-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i Sport</a>
+          <a class="date">Desde: $345,900</a>
+          <p class="description">16.4 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/touring/17-m3s-t-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i Grand Touring</a>
+           <a class="date">Desde: $395,900</a>
+          <p class="description">16.3 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/m3s/trims/touring/17-m3s-t-41v-soul-red.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i Grand Touring Plus</a>
+           <a class="date">Desde: $442,900</a>
+          <p class="description">16.3 KM/L</p>
+          <p class="description">188 HP</p>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      
+      
+      <div class="ui list">
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Motor y transmisión</a>
+      <div class="description">Tipo de motor 2.5L SKYACTIV-G 16 válvulas</div>
+        <div class="description">Potencia 188hp | 5,700rpm</div>
+        <div class="description">Torque 184lb-ft | 3,250rpm</div>
+        <div class="description">Línea roja 6,500rpm</div>
+        <div class="description">Desplazamiento 2,488cm3</div>
+        <div class="description">Diámetro x carrera 89.0 x 100.0mm</div>
+        <div class="description">Relación de compresión 13.0:1</div>
+        <div class="description">Tren de 4 válvulas por cilindro, elevadores mecánicos</div>
+        <div class="description">Inyección directa de combustible</div>
+        <div class="description">Tracción delantera</div>
+        <div class="description">Transmisión manual SKYACTIV®-MT 6 velocidades</div>
+    </div>
+  </div>
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Suspensión y chasis</a>
+      <div class="description">Control dinámico de estabilidad (DSC)</div>
+        <div class="description">Dirección eléctrica</div>
+        <div class="description">Frenos con Sistema Anti-bloqueo (ABS)</div>
+        <div class="description">Asistencia de Frenado (BA)</div>
+        <div class="description">Distribución Electrónica de Fuerza de Frenado (EBD)</div>
+        <div class="description">Frenos de potencia de disco ventilado delantero y disco sólido trasero</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Exterior</a>
+      <div class="description">Calaveras LED</div>
+        <div class="description">Luces de marcha diurna (DRL)</div>
+        <div class="description">Vidrios entintados con filtro UV</div>
+        <div class="description">Antena integrada al medallón</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Interior</a>
+      <div class="description">Aire acondicionado con filtro anti-polen</div>
+        <div class="description">Apertura interior de tapa de combustible y cofre</div>
+        <div class="description">Botón de encendido automático</div>
+        <div class="description">Desempañador trasero</div>
+        <div class="description">Espejo retrovisor con cambio manual para día y noche</div>
+        <div class="description">Luces de lectura delanteras</div>
+        <div class="description">Tomacorriente de 12V (1)</div>
+        <div class="description">Volante con ajuste de altura y profundidad</div>
+        <div class="description">Computadora de viaje</div>
+        <div class="description">Tacómetro y 2 odómetros de viaje reiniciables</div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  <footer>
+        <div class='define'>
+           <ul>
+<div class="ui horizontal bulleted list">
+    <a class="item">Mazda Motor Corporation © 2016 </a>
+  <a class="item" <%= link_to "Acerca", :controller => "bienvenido", :action => "acerca"%>> </a>
+  <a class="item" <%= link_to "Mapa del sitio", :controller => "bienvenido", :action => "mapa"%>></a>
+  <a class="item" <%= link_to "Aviso de privacidad", :controller => "bienvenido", :action => "aviso"%>></a>
+</div>
+</ul>
+        </div>
+    </footer>

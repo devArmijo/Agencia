@@ -1,0 +1,59 @@
+<style>
+   body{ background:#F1F1F1;}
+</style>
+<div id="menu">
+     <!--Empieza el menú superior --> 
+<div class="titulo" id="menu-su">
+<div id="men">
+<ul>
+    <li><a  <%= link_to "", root_path %>><img class="ui top aligned tiny image" align="left" src="<%= asset_path 'mazda_logo.png' %>" width="100px" height="100px"></a></li>
+<li><a title="Sedán" <%= link_to "Sedán", :controller => "bienvenido", :action => "sedan"%>></a></li>
+<li><a title="Todoterrenos" <%= link_to "Todoterrenos", :controller => "bienvenido", :action => "todoterrenos"%>></a></li> 
+<li><a title="Deportivos" <%= link_to "Deportivos", :controller => "bienvenido", :action => "deportivos"%>></a></li>
+<li><a title="Futuros" <%= link_to "Futuros", :controller => "bienvenido", :action => "futuros"%>></a></li>
+<li><a title="Visítanos" <%= link_to "Visítanos", :controller => "bienvenido", :action => "visitanos"%>></a></li>
+<li><a title="Visítanos" <%= link_to "Cita", :controller => "cita", :action => "new"%>></a></li>
+</ul></div></div>  
+<!-- Acaba el menú superior -->
+ <!-- Este es un comentario en HTML
+    <div class="btnscentro">
+    <ul>
+        <li><a href="#" title="Decubre el Mazda3">Mazda3</a></li>
+        <li><a href="#" title="Descubre el Mazda6">Mazda6</a></li>
+    </ul>
+        </div>
+   */--> 
+    </div>
+
+<div id="imag" class="ui large images">
+  <img src="<%= asset_path 'imagen1.jpg' %>">
+  <img src="<%= asset_path 'imagen2.jpg' %>">
+    <img src="<%= asset_path 'imagen3.jpg' %>">
+    <img src="<%= asset_path 'imagen4.jpg' %>">
+    <img src="<%= asset_path 'imagen5.jpg' %>">
+    <img src="<%= asset_path 'imagen6.jpg' %>">
+    <img src="<%= asset_path 'imagen7.jpg' %>">
+    <img src="<%= asset_path 'imagen8.jpg' %>">
+    <img src="<%= asset_path 'imagen9.jpg' %>">
+    <img src="<%= asset_path 'imagen10.jpg' %>">
+    <img src="<%= asset_path 'imagen11.jpg' %>">
+    <img src="<%= asset_path 'imagen12.jpg' %>">
+    <img src="<%= asset_path 'imagen13.jpg' %>">
+    <img src="<%= asset_path 'imagen14.jpg' %>">
+    <img src="<%= asset_path 'imagen16.jpg' %>">
+    <img src="<%= asset_path 'imagen17.jpg' %>">
+</div>
+
+
+<footer>
+        <div class='define'>
+           <ul>
+<div class="ui horizontal bulleted list">
+    <a class="item">Mazda Motor Corporation © 2016 </a>
+  <a class="item" <%= link_to "Acerca", :controller => "bienvenido", :action => "acerca"%>> </a>
+  <a class="item"<%= link_to "Mapa del sitio", :controller => "bienvenido", :action => "mapa"%>></a>
+  <a class="item"<%= link_to "Aviso de privacidad", :controller => "bienvenido", :action => "aviso"%>></a>
+</div>
+</ul>
+        </div>
+    </footer>

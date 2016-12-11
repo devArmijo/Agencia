@@ -1,0 +1,114 @@
+<style>
+   body{ background:#F4F4F4;}
+</style>
+<div id="menu">
+     <!--Empieza el menú superior --> 
+<div class="titulo" id="menu-su">
+<div id="men">
+<ul>
+    <li><a  <%= link_to "", root_path %>><img class="ui top aligned tiny image" align="left" src="<%= asset_path 'mazda_logo.png' %>" width="100px" height="100px"></a></li>
+    
+<li><a title="Sedán" <%= link_to "Sedán", :controller => "bienvenido", :action => "sedan"%>></a></li>
+<li><a title="Todoterrenos" <%= link_to "Todoterrenos", :controller => "bienvenido", :action => "todoterrenos"%>></a></li> 
+<li><a title="Deportivos" <%= link_to "Deportivos", :controller => "bienvenido", :action => "deportivos"%>></a></li>
+<li><a title="Futuros" <%= link_to "Futuros", :controller => "bienvenido", :action => "futuros"%>></a></li>
+<li><a title="Visítanos" <%= link_to "Visítanos", :controller => "bienvenido", :action => "visitanos"%>></a></li>
+<li><a title="Registro" <%= link_to "Cita", :controller => "cita", :action => "new"%>></a></li>
+</ul></div></div>  
+    </div>
+
+
+<div id="imgn" class="ui piled segments">
+  <div class="ui segment">
+    <h1>Mazda MX-5 MIATA 2017</h1>
+      <img src="http://www.mazda.mx/siteassets/vehicles/2017/mx5/vlp/gallery/mx-5-dome360/2016-mx5-gt-soulred-360-extonly-24-mde-mx5-gallery.jpg?w=1170">
+      <div id="cartas" class="ui three column grid">
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="http://www.mazda.mx/siteassets/vehicles/2017/mx5/trims/gt/2016-mx5-gt-crystalpearlwhite-blackint-frontangle-global.png">
+      </div>
+      <div class="content">
+        <a class="header">Modelo i Sport</a>
+          <a class="date">Desde: $346,900</a>
+          <p class="description">15.8 KM/L</p>
+          <p class="description">155 HP</p>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      
+      <div class="ui list">
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Motor y transmisión</a>
+      <div class="description">Tipo de motor 2.0L SKYACTIV-G 16 válvulas</div>
+        <div class="description">Potencia 155hp | 6,000rpm</div>
+        <div class="description">Torque 148lb-ft | 4,600rpm</div>
+        <div class="description">Línea roja 6,800rpm</div>
+        <div class="description">Desplazamiento 1,998cm3</div>
+        <div class="description">Diámetro x carrera 83.5 x 91.2mm</div>
+        <div class="description">Relación de compresión 13.0:1</div>
+        <div class="description">Tren de 4 válvulas por cilindro, elevadores mecánicos</div>
+        <div class="description">Inyección eléctrica controlada</div>
+        <div class="description">Tracción delantera</div>
+        <div class="description">Transmisión manual SKYACTIV®-MT 6 velocidades</div>
+    </div>
+  </div>
+  <div class="item">
+   
+    <div class="content">
+      <a class="header">Suspensión y chasis</a>
+      <div class="description">Control dinámico de estabilidad (DSC)</div>
+        <div class="description">Dirección eléctrica</div>
+        <div class="description">Frenos con Sistema Anti-bloqueo (ABS)</div>
+        <div class="description">Asistencia de Frenado (BA)</div>
+        <div class="description">Distribución Electrónica de Fuerza de Frenado (EBD)</div>
+        <div class="description">Frenos de potencia de disco ventilado delantero y disco sólido trasero</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Exterior</a>
+      <div class="description">Faros LED</div>
+        <div class="description">Luces de marcha diurna (DRL)</div>
+        <div class="description">Vidrios entintados con filtro UV</div>
+        <div class="description">Llantas P205/45 R16</div>
+        <div class="description">Rines 17" aleación de aluminio</div>
+        <div class="description">Antena montada en la parte trasera</div>
+    </div>
+  </div>
+  <div class="item">
+    
+    <div class="content">
+      <a class="header">Interior</a>
+      <div class="description">Aire acondicionado con filtro anti-polen</div>
+        <div class="description">Apertura interior de tapa de combustible, cofre y cajuela</div>
+        <div class="description">Botón de encendido automático</div>
+        <div class="description">Desempañador trasero</div>
+        <div class="description">Espejo retrovisor con cambio manual para día y noche</div>
+        <div class="description">Luces de lectura delanteras</div>
+        <div class="description">Tomacorriente de 12V (1)</div>
+        <div class="description">Volante con ajuste de altura y profundidad</div>
+        <div class="description">Computadora de viaje</div>
+        <div class="description">Tacómetro y 2 odómetros de viaje reiniciables</div>
+    </div>
+  </div>
+</div> 
+  </div>
+</div>
+<footer>
+        <div class='define'>
+           <ul>
+<div class="ui horizontal bulleted list">
+    <a class="item">Mazda Motor Corporation © 2016 </a>
+  <a class="item" <%= link_to "Acerca", :controller => "bienvenido", :action => "acerca"%>></a>
+  <a class="item" <%= link_to "Mapa del sitio", :controller => "bienvenido", :action => "mapa"%>></a>
+  <a class="item" <%= link_to "Aviso de privacidad", :controller => "bienvenido", :action => "aviso"%>></a>
+</div>
+</ul>
+        </div>
+    </footer>
